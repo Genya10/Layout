@@ -1,0 +1,21 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 1360px;    
+}
+header{
+    height: 768px; 
+    background-image: url('../img/background.jpg');
+  
+}
+.title{
+color: var(--black, #1B1D1F);
+font-size: 44px;
+font-weight: 600;
+line-height: 48px;
+}
+.my-city-descr{
+    color: #1B1D1F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
