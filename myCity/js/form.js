@@ -3,11 +3,9 @@ const gmailField = document.querySelector('#user-gmail');
 const submitBtn = document.querySelector('#submit-btn');
 const form = document.querySelector('#form');
 
-
 submitBtn.addEventListener("click", function(){
 
     const formData = new FormData(form);
-    console.log('Data ready')
     fetch('/',{
         method:"POST",
         headers:{"Content-Type":"application/x-www-form-urlencoded"},
@@ -21,4 +19,14 @@ submitBtn.addEventListener("click", function(){
 
 form.addEventListener("submit",function(event){
    event.preventDefault();
+})
+
+
+let allPhoto = document.querySelectorAll('.container-page-slider>img');
+console.log(allPhoto)
+
+allPhoto.forEach(function(photo){
+    photo.addEventListener("click",function(obj){
+ console.log(obj)
+})
 })

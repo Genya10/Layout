@@ -79,3 +79,32 @@ body {
   cursor: pointer;
   border: none;
 }
+/*page-sliser*/
+.page-slider{
+   width: 1170px;
+  margin: auto;
+  padding-bottom: 88px;
+}
+
+.title-slider{
+  color:#1b1d1f;
+ font-weight: 600;
+  font-size: 44px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.container-page-slider img{
+  border-radius: 48px;
+  width: calc(25% - (3 * 25px/4));
+  padding: 0;
+  border:0;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+.container-page-slider{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+}
