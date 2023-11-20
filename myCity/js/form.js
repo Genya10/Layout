@@ -20,13 +20,3 @@ submitBtn.addEventListener("click", function(){
 form.addEventListener("submit",function(event){
    event.preventDefault();
 })
-
-
-let allPhoto = document.querySelectorAll('.container-page-slider>img');
-console.log(allPhoto)
-
-allPhoto.forEach(function(photo){
-    photo.addEventListener("click",function(obj){
- console.log(obj)
-})
-})
