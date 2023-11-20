@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>City Sumy</title>
     <link rel="stylesheet" href="./style/styles.css" />
-    \
+  
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div class="main-page">
+    <section class="main-page">
       <div class="wrapper">
         <img src="./img/logo.png" alt="logo" class="logo">
         <div class="my-city-container">
@@ -31,6 +31,15 @@
           </p>
         </div>
       </div>
-    </div>
+    </section>
+    <section>
+      <form action="#" class="page-form" id="form" netlify>
+        <h2 class="title-form">Підпишись на новини міста </h2>
+        <input type="text" class="input" placeholder="Ім'я" name="ім'я користувача" id="user-name">
+        <input type="text" class="input" placeholder="Email" name="пошта" id="user-gmail">
+        <button class="btn" id="submit-btn">Підписатися</button> 
+      </form>
+    </section>
+    <script src="./js/form.js"></script>
   </body>
 </html>
