@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Sumy</title>
+    <link rel="stylesheet" href="./style/styles.css" />
+    <link rel="stylesheet" href="./style/modal.css">
+    <link href="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+    " rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main-page">
+      <div class="wrapper">
+        <img src="./img/logo.png" alt="logo" class="logo">
+        <div class="my-city-container">
+          <h1 class="title">Суми</h1>
+          <p class="my-city-descr">
+            Засноване 1652 року, налічує близько 268 тисяч українців та своїм
+            промисловим і культурним розвитком багато в чому завдячує діяльності
+            торгового будинку «Харитоненко з сином». Саме вони створили в місті
+            цукрові заводи і зробили з нього «Цукрову столицю».<br/>
+            Спасо-Преображенський кафедральний собор – єдиний у світі
+            православний собор, на даху якого знаходяться об’ємні фігури.<br/> Місто
+            Путивль в області – одне з найдревніших міст Київської Русі,події в
+            ньому описані у «Слові о полку Ігоревім».
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <form action="#" class="page-form" id="form" netlify>
+        <h2 class="title-form">Підпишись на новини міста </h2>
+        <input type="text" class="input" placeholder="Ім'я" name="ім'я користувача" id="user-name">
+        <input type="text" class="input" placeholder="Email" name="пошта" id="user-gmail">
+        <button class="btn" id="submit-btn">Підписатися</button> 
+      </form>
+    </section>
+    <section class="page-slider">
+     <h2 class="title-slider">Суми = маленьке місто великих вражень</h2>
+     <div class="container-page-slider">
+     <button  class="modal-btn" data-micromodal-trigger="modal" data-index="0"> 
+      <img src="./img/1.jpg" alt="sadko" >
+     </button>
+     <button  class="modal-btn" data-micromodal-trigger="modal" data-index="1"> 
+      <img src="./img/2.jpg" alt="museum" >
+    </button>
+      <button class="modal-btn" data-micromodal-trigger="modal" data-index="2"> 
+        <img src="./img/3.jpg" alt="church" >
+      </button>
+      <button class="modal-btn" data-micromodal-trigger="modal" data-index="3">
+        <img src="./img/4.jpg" alt="library">
+      </button>
+      <button class="modal-btn" data-micromodal-trigger="modal" data-index="4"> 
+          <img src="./img/5.jpg" alt="sotnya" >
+        </button>
+      <button class="modal-btn" data-micromodal-trigger="modal" data-index="5">
+             <img src="./img/6.jpg" alt="altanka" >
+            </button>
+      <button class="modal-btn" data-micromodal-trigger="modal" data-index="6">
+              <img src="./img/7.jpg" alt="statuya" >
+            </button>
+      <button class="modal-btn" data-micromodal-trigger="modal" data-index="7">
+                <img src="./img/8.jpg" alt="celebraite" >
+              </button>
+     </div>
+    </section>
+    <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+          <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+              <header class="modal__header">
+                  <h2 class="modal__title" id="modal-title">
+                      Cвітлини міста Києва
+                  </h2>
+                  <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+              </header>
+              <main class="modal__content" id="modal-content">
+                  <div class="splide" role="group" aria-label="city-gallery">
+                      <div class="splide__track">
+                          <ul class="splide__list">
+                              <li class="splide__slide">
+                                  <img src="img/1.jpg" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="img/2.jpg" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="img/3.jpg" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="img/4.jpg" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="img/5.jpg" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="img/6.jpg" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="img/7.jpg" alt="">
+                              </li>
+                              <li class="splide__slide">
+                                  <img src="img/8.jpg" alt="">
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </main>
+          </div>
+      </div>
+  </div>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/slider&modal.js"></script>
+  </body>
+</html>
